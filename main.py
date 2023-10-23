@@ -1,5 +1,7 @@
 #Timothy Polkhovskiy's main code for their repository
-encoded_password = []
+
+encoded_password = []   #Can use this to make your decoder shorter so you don't have to make a string to list
+encoded_password_string = ''
 
 
 def encode(password):
@@ -27,7 +29,7 @@ while True:
     option = int(input("Please enter an option:"))
     if option == 1:
         password = input("Please enter your password to encode:")
-        encode(password)
+        encoded_password_string = encode(password)
         print('Your password has been encoded and stored!')
     elif option == 2:
         pass
